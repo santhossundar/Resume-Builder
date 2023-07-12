@@ -1,0 +1,59 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+:root {
+    --primary-color: #4a55a2;
+    --secondary-color: black;
+
+    --text-primary-color: #c5dff8;
+
+    --transition-timing: 0.7s;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+    overscroll-behavior: contain;
+}
+
+body {
+    background: var(--bg-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    background: none;
+    font: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.header {
+    width: 100%;
+
+    .navbar {
+        background-color: var(--primary-color);
+    }
+
+    .container-fluid {
+        padding: 1rem;
+
+        .navbar-brand {
+            margin-left: 3rem;
+            color: var(--text-primary-color);
+        }
+    }
+}
