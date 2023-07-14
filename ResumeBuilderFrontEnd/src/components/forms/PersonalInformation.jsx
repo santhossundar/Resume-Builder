@@ -27,7 +27,7 @@ const PersonalInformation = () => {
                                             <Field
                                                 type="text"
                                                 name="firstname"
-                                                className="w-100"
+                                                className="w-100 form-control"
                                             />
                                             <ErrorMessage name="firstname" component="div" />
                                         </div>
@@ -48,7 +48,7 @@ const PersonalInformation = () => {
                                             <Field
                                                 type="text"
                                                 name="lastname"
-                                                className="w-100"
+                                                className="w-100 form-control"
                                             />
                                             <ErrorMessage name="lastname" component="div" />
                                         </div>
@@ -67,7 +67,7 @@ const PersonalInformation = () => {
                                             <Field
                                                 type="text"
                                                 name="address"
-                                                className="w-100"
+                                                className="w-100 form-control"
                                             />
                                             <ErrorMessage name="address" component="div" />
                                         </div>
@@ -85,7 +85,7 @@ const PersonalInformation = () => {
                                             <Field
                                                 type="number"
                                                 name="telephonenumber"
-                                                className="w-100"
+                                                className="w-100 form-control"
                                             />
                                             <ErrorMessage name="telephonenumber" component="div" />
                                         </div>
@@ -104,7 +104,7 @@ const PersonalInformation = () => {
                                             <Field
                                                 type="text"
                                                 name="MobileNumber"
-                                                className="w-100"
+                                                className="w-100 form-control"
                                             />
                                             <ErrorMessage name="mobilenumber" component="div" />
 
@@ -125,7 +125,7 @@ const PersonalInformation = () => {
                                             <Field
                                                 type="email"
                                                 name="email"
-                                                className="w-100"
+                                                className="w-100 form-control"
                                             />
                                             <ErrorMessage name="email" component="div" />
                                         </div>
@@ -144,7 +144,7 @@ const PersonalInformation = () => {
                                             <Field
                                                 type="text"
                                                 name="country"
-                                                className="w-100"
+                                                className="w-100 form-control"
                                             />
                                             <ErrorMessage name="country" component="div" />
                                         </div>
@@ -152,16 +152,21 @@ const PersonalInformation = () => {
                                 </div>
                             </div>
 
-                            <div className="col-md-6">
+                            <div className="col-md-12">
                                 <div className="form-field">
                                     <div className="row">
-                                        <div className="col">
+                                        <div className="col-2">
+                                            <label htmlFor='gender'>Gender</label>
+                                        </div>
+
+                                        <div className="col-4">
                                             <div className="gender">
                                                 <div className="gender-item">
                                                     <Field
                                                         component="select"
                                                         name="gender"
                                                         placeholder="Select Gender"
+                                                        className="w-50 form-control"
                                                     >
                                                         <option value="male">Male</option>
                                                         <option value="female">Female</option>
@@ -170,12 +175,18 @@ const PersonalInformation = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col">
+
+                                        <div className="col-2">
+                                            <label htmlFor='dateofbirth'>Date of Birth</label>
+                                        </div>
+
+                                        <div className="col-4">
                                             <DatePicker
                                                 selected={selectedDate}
                                                 onChange={handleDateChange}
                                                 dateFormat="dd/MM/yyyy"
                                                 placeholderText="Select a date"
+                                                className="form-control"
                                             />
                                         </div>
                                     </div>
