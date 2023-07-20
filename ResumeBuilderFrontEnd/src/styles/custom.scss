@@ -44,10 +44,11 @@ button {
 }
 
 .btn-txt-view {
-    background-color: hsl(186.7,100%,98.2%);
+    background-color: hsl(186.7,100%,100%);
 
     &:hover {
-        background-color: hsl(186.7,100%,100%);
+        background-color: hsl(232.5,37.3%,46.3%);
+        color: white !important;
     }
 }
 
