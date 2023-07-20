@@ -1,6 +1,6 @@
 import React from 'react'
 import FormBody from './FormBody';
-import Button from '../Button';
+import Pagination from '../Pagination';
 import { useSelector } from 'react-redux';
 
 const Form = () => {
@@ -28,8 +28,8 @@ const Form = () => {
                 </div>
 
                 <div className="footer m-5 p-2 d-flex justify-content-center">
-                    <Button text="Prev" />
-                    <Button text="Next" />
+                    <Pagination text="Prev" />
+                    <Pagination text="Next" />
 
                 </div>
             </div>

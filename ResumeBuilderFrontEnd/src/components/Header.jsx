@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = () => {
+const Pagination = () => {
     return (
         <section className='header w-100'>
             <nav className="navbar">
@@ -12,4 +12,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default Pagination
