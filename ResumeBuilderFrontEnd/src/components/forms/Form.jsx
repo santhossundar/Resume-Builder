@@ -12,8 +12,6 @@ const Form = () => {
         "Education Details",
     ]
 
-    console.log(page)
-
     return (
         <div className='form m-5'>
             <div className="progress-menu"></div>
@@ -26,7 +24,7 @@ const Form = () => {
                 </div>
 
                 <div className="body">
-                    <FormBody pageId={page} />
+                    <FormBody/>
                 </div>
 
                 <div className="footer m-5 p-2 d-flex justify-content-center">

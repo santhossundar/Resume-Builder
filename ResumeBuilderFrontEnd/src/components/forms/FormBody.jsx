@@ -4,8 +4,8 @@ import PersonalInformation from './PersonalInformation'
 import WorkingExperiences from './WorkingExperiences'
 import {useSelector} from 'react-redux';
 
-const FormBody = ({pageId}) => {
-    const page = useSelector((state) => state.vlaue);
+const FormBody = () => {
+    const page = useSelector((state) => state.value);
 
     return (
         <div className='form-body'>
