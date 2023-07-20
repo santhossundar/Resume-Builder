@@ -25,14 +25,14 @@ const Form = () => {
                     <FormBody pageId={page} />
                 </div>
 
-                <div className="footer">
-                    <button onClick={() => {
+                <div className="footer m-5 p-2 d-flex justify-content-center">
+                    <button className='btn btn-secondary ms-2 me-1 pt-2 pb-2 ps-4 pe-4 shadow' onClick={() => {
                         setPage((currentPage) => currentPage - 1);
                     }}>
                         Prev
                     </button>
 
-                    <button onClick={() => {
+                    <button className='btn btn-secondary ms-1 me-2 pt-2 pb-2 ps-4 pe-4' onClick={() => {
                         setPage((currentPage) => currentPage + 1)
                     }}>
                         Next
