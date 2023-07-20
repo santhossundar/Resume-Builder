@@ -1,12 +1,15 @@
 import React from 'react'
 import EducationDetails from './EducationDetails'
 import PersonalInformation from './PersonalInformation'
-import WorkPlaceDetails from './WorkPlaceDetails'
+import WorkingExperiences from './WorkingExperiences'
+import {useSelector} from 'react-redux';
 
-const FormBody = ({pageId}) => {
+const FormBody = () => {
+    const page = useSelector((state) => state.value);
+
     return (
         <div className='form-body'>
-            {pageId===1?<WorkPlaceDetails/>:pageId===2?<EducationDetails/>:<PersonalInformation/>}
+            {page===1?<WorkingExperiences/>:page===2?<EducationDetails/>:<PersonalInformation/>}
         </div>
     )
 }

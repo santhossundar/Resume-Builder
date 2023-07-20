@@ -43,6 +43,14 @@ button {
     cursor: pointer;
 }
 
+.btn-txt-view {
+    background-color: hsl(186.7,100%,98.2%);
+
+    &:hover {
+        background-color: hsl(186.7,100%,100%);
+    }
+}
+
 .header {
     .navbar {
         width: 100%;
